@@ -1,4 +1,4 @@
-App = new Ext.Application({
+var App = new Ext.Application({
     name: "App",
 
     launch: function() {
