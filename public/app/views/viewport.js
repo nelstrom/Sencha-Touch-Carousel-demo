@@ -1,14 +1,43 @@
-App.views.Viewport = Ext.extend(Ext.Carousel, {
+App.views.Viewport = Ext.extend(Ext.TabPanel, {
     fullscreen: true,
-	defaults: {
-		styleHtmlContent: true
-	},
-	items: [
-		{ html: 'one' },
-		{ html: 'two' },
-	],
-    
+
     initComponent: function() {
+        Ext.apply(this, {
+            items: [
+                {
+                    xtype: 'carousel',
+                    title: 'horizontal',
+                    direction: 'horizontal',
+                    scroll: 'vertical',
+                    items: [
+                        {
+                            xtype: 'htmlpage',
+                            url: '/about.html'
+                        },
+                        {
+                            xtype: 'htmlpage',
+                            url: '/welcome.html'
+                        },
+                    ]
+                },
+                {
+                    xtype: 'carousel',
+                    title: 'vertical',
+                    direction: 'vertical',
+                    scroll: 'horizontal',
+                    items: [
+                        {
+                            xtype: 'htmlpage',
+                            url: '/about.html'
+                        },
+                        {
+                            xtype: 'htmlpage',
+                            url: '/welcome.html'
+                        },
+                    ]
+                }
+            ]
+        });
         App.views.Viewport.superclass.initComponent.apply(this, arguments);
     }
 });
