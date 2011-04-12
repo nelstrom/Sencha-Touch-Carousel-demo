@@ -6,6 +6,7 @@ App.views.Viewport = Ext.extend(Ext.TabPanel, {
             items: [
                 {
                     xtype: 'carousel',
+                    id: 'hcarousel',
                     title: 'horizontal',
                     direction: 'horizontal',
                     scroll: 'vertical',
@@ -22,6 +23,7 @@ App.views.Viewport = Ext.extend(Ext.TabPanel, {
                 },
                 {
                     xtype: 'carousel',
+                    id: 'vcarousel',
                     title: 'vertical',
                     direction: 'vertical',
                     scroll: 'horizontal',

@@ -3,5 +3,7 @@ var App = new Ext.Application({
 
     launch: function() {
         this.views.viewport = new this.views.Viewport();
+        this.views.hcarousel = this.views.viewport.getComponent('hcarousel');
+        this.views.vcarousel = this.views.viewport.getComponent('vcarousel');
     }
 });
