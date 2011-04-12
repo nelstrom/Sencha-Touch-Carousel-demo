@@ -12,12 +12,12 @@ App.views.Viewport = Ext.extend(Ext.TabPanel, {
                     items: [
                         {
                             xtype: 'htmlpage',
-                            url: '/about.html'
+                            url: '/welcome.html'
                         },
                         {
                             xtype: 'htmlpage',
-                            url: '/welcome.html'
-                        },
+                            url: '/about.html'
+                        }
                     ]
                 },
                 {
@@ -28,12 +28,12 @@ App.views.Viewport = Ext.extend(Ext.TabPanel, {
                     items: [
                         {
                             xtype: 'htmlpage',
-                            url: '/about.html'
+                            url: '/welcome.html'
                         },
                         {
                             xtype: 'htmlpage',
-                            url: '/welcome.html'
-                        },
+                            url: '/about.html'
+                        }
                     ]
                 }
             ]
