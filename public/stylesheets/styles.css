@@ -5,7 +5,7 @@ html, .x-fullscreen {
   font-size: 80%;
   color: #999;
 }
-.painting .x-carousel-item {
+.canvas {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 0;
