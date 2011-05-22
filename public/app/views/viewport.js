@@ -7,7 +7,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
             defaults: { styleHtmlContent: true },
             items: [
                 {
-                    xtype: 'infoswipe',
+                    xtype: 'infobar',
                     slug: 'asteroid',
                     title: 'Untitled asteroid',
                     artist: 'Dale Adcock',
@@ -16,7 +16,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 },
 
                 {
-                    xtype: 'infoswipe',
+                    xtype: 'infobar',
                     slug: 'template',
                     title: 'Template',
                     artist: 'Dale Adcock',
@@ -25,7 +25,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 },
 
                 {
-                    xtype: 'infoswipe',
+                    xtype: 'infobar',
                     slug: 'standing',
                     title: 'Standing',
                     artist: 'Dale Adcock',
@@ -34,7 +34,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 },
 
                 {
-                    xtype: 'infoswipe',
+                    xtype: 'infobar',
                     slug: 'sitting',
                     title: 'Sitting',
                     artist: 'Dale Adcock',
@@ -43,7 +43,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 },
 
                 {
-                    xtype: 'infoswipe',
+                    xtype: 'infobar',
                     slug: 'erect',
                     title: 'Erect',
                     artist: 'Dale Adcock',
