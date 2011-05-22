@@ -4,13 +4,19 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
     initComponent: function() {
         Ext.apply(this, {
             cls: 'painting',
-            defaults: { styleHtml: true },
+            defaults: { styleHtmlContent: true },
             items: [
-                { cls: 'asteroid' },
-                { cls: 'template' },
-                { cls: 'standing' },
-                { cls: 'sitting' },
-                { cls: 'erect' },
+                {
+                    layout: { type: 'vbox', align: 'stretch' }, defaults: {flex: 1},
+                    items: [
+                        { cls: 'canvas asteroid', flex: 6 },
+                        { html: 'info' }
+                    ]
+                },
+                { cls: 'canvas template' },
+                { cls: 'canvas standing' },
+                { cls: 'canvas sitting' },
+                { cls: 'canvas erect' },
             ],
         });
         App.views.Viewport.superclass.initComponent.apply(this, arguments);
