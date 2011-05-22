@@ -6,13 +6,11 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
             cls: 'painting',
             defaults: { styleHtmlContent: true },
             items: [
-                {
-                    layout: { type: 'vbox', align: 'stretch' }, defaults: {flex: 1},
-                    items: [
-                        { cls: 'canvas asteroid', flex: 3 },
-                        { html: '<h2>Untitled asteroid</h2><p>by Dale Adcock</p>' }
-                    ]
-                },
+				{
+					xtype: 'infopanel',
+					slug: 'asteroid',
+					title: 'Untitled asteroid'
+				},
 
                 {
                     layout: { type: 'vbox', align: 'stretch' }, defaults: {flex: 1},
