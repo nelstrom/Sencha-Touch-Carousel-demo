@@ -1,4 +1,21 @@
+html, .x-fullscreen {
+  background-color: #fff;
+}
 .metadata {
   font-size: 80%;
   color: #999;
 }
+.painting .x-carousel-item {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 0;
+}
+.item-1 { background-image: url('http://daleadcock.com/files/gimgs/3_untitledasteroid2010oil.jpg'); }
+.item-2 { background-image: url('http://daleadcock.com/files/gimgs/3_template-i.jpg'); }
+.item-3 { background-image: url('http://daleadcock.com/files/gimgs/3_template-ii.jpg'); }
+.item-4 { background-image: url('http://daleadcock.com/files/gimgs/3_untitledtriangular-head2009-2010oil-on-linen914-x-609-mm.jpg'); }
+.item-5 { background-image: url('http://daleadcock.com/files/gimgs/3_untitledstandingbackwe.jpg'); }
+.item-6 { background-image: url('http://daleadcock.com/files/gimgs/3_untitledsitting2009oilonlinen190x230cm.jpg'); }
+.item-7 { background-image: url('http://daleadcock.com/files/gimgs/3_untitlederect2009oilonlinen190x230cm.jpg'); }
+.item-8 { background-image: url('http://daleadcock.com/files/gimgs/3_green-head2009oilonlinen6096x9144cm.jpg'); }
+
