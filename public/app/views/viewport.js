@@ -6,35 +6,37 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
             cls: 'painting',
             defaults: { styleHtmlContent: true },
             items: [
-				{
-					xtype: 'infopanel',
-					slug: 'asteroid',
-					title: 'Untitled asteroid'
-				},
+                {
+                    xtype: 'infoswipe',
+                    slug: 'asteroid',
+                    title: 'Untitled asteroid',
+                    medium: 'Oil on canvas',
+                    dimensions: '1,000 x 1,000mm'
+                },
 
-				{
-					xtype: 'infopanel',
-					slug: 'template',
-					title: 'Template'
-				},
+                {
+                    xtype: 'infoswipe',
+                    slug: 'template',
+                    title: 'Template'
+                },
 
-				{
-					xtype: 'infopanel',
-					slug: 'standing',
-					title: 'Standing'
-				},
+                {
+                    xtype: 'infoswipe',
+                    slug: 'standing',
+                    title: 'Standing'
+                },
 
-				{
-					xtype: 'infopanel',
-					slug: 'sitting',
-					title: 'Sitting'
-				},
+                {
+                    xtype: 'infoswipe',
+                    slug: 'sitting',
+                    title: 'Sitting'
+                },
 
-				{
-					xtype: 'infopanel',
-					slug: 'erect',
-					title: 'Erect'
-				},
+                {
+                    xtype: 'infoswipe',
+                    slug: 'erect',
+                    title: 'Erect'
+                },
 
             ],
         });
