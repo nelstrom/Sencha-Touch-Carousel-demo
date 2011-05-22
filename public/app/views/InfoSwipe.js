@@ -4,7 +4,7 @@ App.views.InfoSwipe = Ext.extend(Ext.Panel, {
         var titleCard = new Ext.Panel({
             tpl: [
                 "<h2>{title}</h2>",
-                "<p>by Dale Adcock</p>"
+                "<p>by {artist}</p>"
             ]
         });
 

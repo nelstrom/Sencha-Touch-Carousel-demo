@@ -10,6 +10,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                     xtype: 'infoswipe',
                     slug: 'asteroid',
                     title: 'Untitled asteroid',
+                    artist: 'Dale Adcock',
                     medium: 'Oil on canvas',
                     dimensions: '1,000 x 1,000mm'
                 },
@@ -18,6 +19,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                     xtype: 'infoswipe',
                     slug: 'template',
                     title: 'Template',
+                    artist: 'Dale Adcock',
                     medium: 'Oil on canvas',
                     dimensions: '1,000 x 1,000mm'
                 },
@@ -26,6 +28,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                     xtype: 'infoswipe',
                     slug: 'standing',
                     title: 'Standing',
+                    artist: 'Dale Adcock',
                     medium: 'Oil on canvas',
                     dimensions: '1,000 x 1,000mm'
                 },
@@ -34,6 +37,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                     xtype: 'infoswipe',
                     slug: 'sitting',
                     title: 'Sitting',
+                    artist: 'Dale Adcock',
                     medium: 'Oil on canvas',
                     dimensions: '1,000 x 1,000mm'
                 },
@@ -42,6 +46,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                     xtype: 'infoswipe',
                     slug: 'erect',
                     title: 'Erect',
+                    artist: 'Dale Adcock',
                     medium: 'Oil on canvas',
                     dimensions: '1,000 x 1,000mm'
                 },
