@@ -1,6 +1,24 @@
 App.views.InfoSwipe = Ext.extend(Ext.Panel, {
     initComponent: function(){
+
+        var titleCard = new Ext.Panel({
+            tpl: [
+                "<h2>{title}</h2>",
+                "<p>by Dale Adcock</p>"
+            ]
+        });
+
+        var metadataCard = new Ext.Panel({
+            tpl: [
+                "<dl>",
+                "  <dt>medium:</dt><dd>{medium}</dd>",
+                "  <dt>dimensions:</dt><dd>{dimensions}</dd>",
+                "</dl>"
+            ]
+        });
+
         Ext.apply(this, {
+
 
             scroll: false,
 
@@ -17,13 +35,13 @@ App.views.InfoSwipe = Ext.extend(Ext.Panel, {
                 {
                     xtype: 'carousel',
                     flex: 1,
-                    items: [
-                        {html: "<h3>" + this.title + "</h3><p>by Dale Adcock</p>"},
-                        {html: "<dl><dt>medium:</dt><dd>"+this.medium+"</dd><dt>dimensions:</dt><dd>"+this.dimensions+"</dd></dl>"}
-                    ]
+                    items: [titleCard, metadataCard]
                 }
             ]
         });
+
+        titleCard.update(this);
+        metadataCard.update(this);
 
         App.views.HtmlPage.superclass.initComponent.call(this);
     }
