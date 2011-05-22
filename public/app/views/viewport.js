@@ -12,37 +12,30 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
 					title: 'Untitled asteroid'
 				},
 
-                {
-                    layout: { type: 'vbox', align: 'stretch' }, defaults: {flex: 1},
-                    items: [
-						{ cls: 'canvas template', flex: 3 },
-                        { html: '<h2>Template</h2><p>by Dale Adcock</p>' }
-                    ]
-                },
+				{
+					xtype: 'infopanel',
+					slug: 'template',
+					title: 'Template'
+				},
 
-                {
-                    layout: { type: 'vbox', align: 'stretch' }, defaults: {flex: 1},
-                    items: [
-						{ cls: 'canvas standing', flex: 3 },
-                        { html: '<h2>Standing</h2><p>by Dale Adcock</p>' }
-                    ]
-                },
+				{
+					xtype: 'infopanel',
+					slug: 'standing',
+					title: 'Standing'
+				},
 
-                {
-                    layout: { type: 'vbox', align: 'stretch' }, defaults: {flex: 1},
-                    items: [
-						{ cls: 'canvas sitting', flex: 3 },
-                        { html: '<h2>Sitting</h2><p>by Dale Adcock</p>' }
-                    ]
-                },
+				{
+					xtype: 'infopanel',
+					slug: 'sitting',
+					title: 'Sitting'
+				},
 
-                {
-                    layout: { type: 'vbox', align: 'stretch' }, defaults: {flex: 1},
-                    items: [
-						{ cls: 'canvas erect', flex: 3 },
-                        { html: '<h2>Erect</h2><p>by Dale Adcock</p>' }
-                    ]
-                },
+				{
+					xtype: 'infopanel',
+					slug: 'erect',
+					title: 'Erect'
+				},
+
             ],
         });
         App.views.Viewport.superclass.initComponent.apply(this, arguments);
