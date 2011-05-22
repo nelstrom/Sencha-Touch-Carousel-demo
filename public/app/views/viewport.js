@@ -17,7 +17,7 @@ App.views.Viewport = Ext.extend(Ext.TabPanel, {
                         },
                         {
                             xtype: 'htmlpage',
-                            url: '/about.html'
+                            url: '/horizontal/detail.html'
                         }
                     ]
                 },
