@@ -17,25 +17,33 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 {
                     xtype: 'infoswipe',
                     slug: 'template',
-                    title: 'Template'
+                    title: 'Template',
+                    medium: 'Oil on canvas',
+                    dimensions: '1,000 x 1,000mm'
                 },
 
                 {
                     xtype: 'infoswipe',
                     slug: 'standing',
-                    title: 'Standing'
+                    title: 'Standing',
+                    medium: 'Oil on canvas',
+                    dimensions: '1,000 x 1,000mm'
                 },
 
                 {
                     xtype: 'infoswipe',
                     slug: 'sitting',
-                    title: 'Sitting'
+                    title: 'Sitting',
+                    medium: 'Oil on canvas',
+                    dimensions: '1,000 x 1,000mm'
                 },
 
                 {
                     xtype: 'infoswipe',
                     slug: 'erect',
-                    title: 'Erect'
+                    title: 'Erect',
+                    medium: 'Oil on canvas',
+                    dimensions: '1,000 x 1,000mm'
                 },
 
             ],
