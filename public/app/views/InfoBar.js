@@ -1,6 +1,3 @@
-// Setup global vars for use in webkit inspector
-var inactive, active;
-
 App.views.InfoBar = Ext.extend(Ext.Panel, {
     initComponent: function(){
         var infoBarPanel = this,
