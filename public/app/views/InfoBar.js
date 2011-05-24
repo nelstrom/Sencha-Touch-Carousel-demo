@@ -39,6 +39,7 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
 
             layout: 'card',
             cardSwitchAnimation: 'flip',
+			cls: 'infobar',
 
             items: [imageCard, infoCard],
 

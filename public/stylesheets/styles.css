@@ -5,6 +5,9 @@ html, .x-fullscreen {
   font-size: 80%;
   color: #999;
 }
+.infobar {
+  background-color: black;
+}
 .infocard {
   background-color: black;
   background-image: url('/images/noise-dark-35.png');
@@ -16,6 +19,7 @@ html, .x-fullscreen {
   color: white;
 }
 .canvas {
+  background-color: white;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 0;
