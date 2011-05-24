@@ -4,7 +4,24 @@ var inactive, active;
 App.views.InfoBar = Ext.extend(Ext.Panel, {
     initComponent: function(){
         var infoBarPanel = this,
-            activeCardIndex = 0;
+            activeCardIndex = 0,
+
+            imageCard = {
+                cls: 'canvas ' + this.slug,
+            },
+
+            infoCard = {
+                tpl: [
+                    "<h2>{title}</h2>",
+                    "<p>by {artist}</p>",
+                    "<dl>",
+                    "  <dt>medium:</dt><dd>{medium}</dd>",
+                    "  <dt>dimensions:</dt><dd>{dimensions}</dd>",
+                    "</dl>"
+                ],
+
+                show: function() { this.update(infoBarPanel); }
+            };
 
         Ext.apply(this, {
 
@@ -39,23 +56,7 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                     ]
                 }
             ],
-            items: [
-                {
-                    cls: 'canvas ' + this.slug,
-                },
-                {
-                    tpl: [
-                        "<h2>{title}</h2>",
-                        "<p>by {artist}</p>",
-                        "<dl>",
-                        "  <dt>medium:</dt><dd>{medium}</dd>",
-                        "  <dt>dimensions:</dt><dd>{dimensions}</dd>",
-                        "</dl>"
-                    ],
-
-                    show: function() { this.update(infoBarPanel); }
-                },
-            ]
+            items: [imageCard, infoCard]
         });
 
         App.views.InfoBar.superclass.initComponent.call(this);
