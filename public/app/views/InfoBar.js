@@ -1,13 +1,14 @@
 App.views.InfoBar = Ext.extend(Ext.Panel, {
     initComponent: function(){
         var infoBarPanel = this,
-            activeCardIndex = 0,
 
             imageCard = {
+				id: 'image_' + this.slug,
                 cls: 'canvas ' + this.slug,
             },
 
             infoCard = {
+				id: 'info_' + this.slug,
                 html: '<h3>{placeholder}</h3>',
                 styleHtmlContent: true,
                 tpl: [
@@ -19,7 +20,7 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                     "</dl>"
                 ],
 
-                //show: function() { this.update(infoBarPanel); }
+				//show: function() { this.update(infoBarPanel); }
             };
 
         Ext.apply(this, {
@@ -34,23 +35,22 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                     items: [
                         { xtype: 'spacer' },
                         {
-                            text: 'info',
+                            text: 'image',
                             handler: function() {
-								var btnText = 'image';
-                                if (activeCardIndex == 0) {
-                                    activeCardIndex = 1;
-                                } else {
-                                    activeCardIndex = 0;
-                                }
-								if (this.getText() == 'image') { btnText = 'info'; }
-								this.setText(btnText);
-                                infoBarPanel.setActiveItem(activeCardIndex);
+								if (this.getText() == 'image') {
+									infoBarPanel.setActiveItem('image_' + infoBarPanel.slug);
+									this.setText('info');
+								} else {
+									infoBarPanel.setActiveItem('info_' + infoBarPanel.slug);
+									this.setText('image');
+								}
                             }
                         }
                     ]
                 }
             ],
-            items: [imageCard, infoCard]
+            items: [infoCard, imageCard]
+            //items: [imageCard, infoCard]
         });
 
         App.views.InfoBar.superclass.initComponent.call(this);
