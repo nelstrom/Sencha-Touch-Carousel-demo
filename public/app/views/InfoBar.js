@@ -36,11 +36,14 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                         {
                             text: 'info',
                             handler: function() {
+								var btnText = 'image';
                                 if (activeCardIndex == 0) {
                                     activeCardIndex = 1;
                                 } else {
                                     activeCardIndex = 0;
                                 }
+								if (this.getText() == 'image') { btnText = 'info'; }
+								this.setText(btnText);
                                 infoBarPanel.setActiveItem(activeCardIndex);
                             }
                         }
