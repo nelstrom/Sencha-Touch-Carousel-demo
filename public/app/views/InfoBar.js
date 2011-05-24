@@ -9,6 +9,7 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
 
         infoCard = {
             id: 'info_' + this.slug,
+            cls: 'infocard',
             html: '<h3>{placeholder}</h3>',
             styleHtmlContent: true,
             tpl: [
