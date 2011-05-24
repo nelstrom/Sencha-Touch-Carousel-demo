@@ -47,7 +47,7 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
             ]
         });
 
-        App.views.HtmlPage.superclass.initComponent.call(this);
+        App.views.InfoBar.superclass.initComponent.call(this);
     }
 });
 
