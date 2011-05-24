@@ -16,7 +16,9 @@ html, .x-fullscreen {
 .infocard .x-html h1,
 .infocard .x-html h2,
 .infocard .x-html h3 {
-  color: white;
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3),  
+               0  1px 0 rgba(255,255,255,0.4);
 }
 .canvas {
   background-color: white;
