@@ -30,7 +30,6 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
             ],
             items: [
                 {
-                    style: { backgroundColor: '#aaa' },
                     tpl: [
                         "<h2>{title}</h2>",
                         "<p>by {artist}</p>",
@@ -39,6 +38,7 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                         "  <dt>dimensions:</dt><dd>{dimensions}</dd>",
                         "</dl>"
                     ],
+
                     show: function() { this.update(infoBarPanel); }
                 },
                 {
