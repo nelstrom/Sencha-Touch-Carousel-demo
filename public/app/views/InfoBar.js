@@ -41,6 +41,9 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
             ],
             items: [
                 {
+                    cls: 'canvas ' + this.slug,
+                },
+                {
                     tpl: [
                         "<h2>{title}</h2>",
                         "<p>by {artist}</p>",
@@ -51,9 +54,6 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                     ],
 
                     show: function() { this.update(infoBarPanel); }
-                },
-                {
-                    cls: 'canvas ' + this.slug,
                 },
             ]
         });
