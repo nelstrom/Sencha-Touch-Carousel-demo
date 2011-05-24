@@ -20,9 +20,6 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                     "</dl>"
                 ],
 
-				//show: function() {
-					//this.update(infoBarPanel); 
-				//}
             };
 
         Ext.apply(this, {
@@ -37,7 +34,7 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                     items: [
                         { xtype: 'spacer' },
                         {
-                            text: 'image',
+                            text: 'info',
                             handler: function() {
 								if (this.getText() == 'image') {
 									infoBarPanel.setActiveItem('image_' + infoBarPanel.slug);
@@ -51,8 +48,15 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                     ]
                 }
             ],
-            items: [infoCard, imageCard]
-            //items: [imageCard, infoCard]
+
+			items: [imageCard, infoCard],
+
+			listeners: {
+				beforecardswitch: function() {
+					var infoPanel = this.getComponent('info_' + this.slug);
+					infoPanel.update(this);
+				}
+			}
         });
 
         App.views.InfoBar.superclass.initComponent.call(this);
