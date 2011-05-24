@@ -1,3 +1,6 @@
+// Setup global vars for use in webkit inspector
+var inactive, active;
+
 App.views.InfoBar = Ext.extend(Ext.Panel, {
     initComponent: function(){
         var infoBarPanel = this,
@@ -22,7 +25,15 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                                 } else {
                                     activeCardIndex = 0;
                                 }
+                                inactive = infoBarPanel.getActiveItem();
+                                inactiveClass = inactive.el.dom.className;
+                                inactive.el.dom.className = inactiveClass + ' x-hidden-display';
+
                                 infoBarPanel.setActiveItem(activeCardIndex);
+
+                                active = infoBarPanel.getActiveItem();
+                                activeClass = active.el.dom.className;
+                                active.el.dom.className = activeClass.replace('x-hidden-display', '');
                             }
                         }
                     ]
