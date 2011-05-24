@@ -11,6 +11,8 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
             },
 
             infoCard = {
+                html: '<h3>{placeholder}</h3>',
+                styleHtmlContent: true,
                 tpl: [
                     "<h2>{title}</h2>",
                     "<p>by {artist}</p>",
@@ -20,7 +22,7 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                     "</dl>"
                 ],
 
-                show: function() { this.update(infoBarPanel); }
+                //show: function() { this.update(infoBarPanel); }
             };
 
         Ext.apply(this, {
@@ -42,15 +44,15 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                                 } else {
                                     activeCardIndex = 0;
                                 }
-                                inactive = infoBarPanel.getActiveItem();
-                                inactiveClass = inactive.el.dom.className;
-                                inactive.el.dom.className = inactiveClass + ' x-hidden-display';
+                                //inactive = infoBarPanel.getActiveItem();
+                                //inactiveClass = inactive.el.dom.className;
+                                //inactive.el.dom.className = inactiveClass + ' x-hidden-display';
 
                                 infoBarPanel.setActiveItem(activeCardIndex);
 
-                                active = infoBarPanel.getActiveItem();
-                                activeClass = active.el.dom.className;
-                                active.el.dom.className = activeClass.replace('x-hidden-display', '');
+                                //active = infoBarPanel.getActiveItem();
+                                //activeClass = active.el.dom.className;
+                                //active.el.dom.className = activeClass.replace('x-hidden-display', '');
                             }
                         }
                     ]
