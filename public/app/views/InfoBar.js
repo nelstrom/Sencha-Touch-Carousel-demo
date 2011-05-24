@@ -3,7 +3,7 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
         var infoBarPanel = this,
 
             imageCard = {
-				id: 'image_' + this.slug,
+				id:  'image_' + this.slug,
                 cls: 'canvas ' + this.slug,
             },
 
@@ -20,7 +20,9 @@ App.views.InfoBar = Ext.extend(Ext.Panel, {
                     "</dl>"
                 ],
 
-				//show: function() { this.update(infoBarPanel); }
+				//show: function() {
+					//this.update(infoBarPanel); 
+				//}
             };
 
         Ext.apply(this, {
