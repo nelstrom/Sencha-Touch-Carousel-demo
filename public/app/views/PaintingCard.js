@@ -12,7 +12,10 @@ App.views.PaintingCard = Ext.extend(Ext.Panel, {
             flex: 1,
             items: [
                 {
-                    tpl: ["<h3>{title}</h3>", "<p>by {artist}</p>"],
+                    tpl: [
+                        "<h3>{title}</h3>",
+                        "<p>by <a href='{url}'>{artist}</a></p>"
+                    ],
                     show: function() { this.update(pane); }
                 },
                 {
