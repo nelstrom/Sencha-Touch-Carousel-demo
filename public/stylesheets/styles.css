@@ -1,34 +1,32 @@
 html, .x-fullscreen {
   background-color: #fff;
 }
-.metadata {
-  font-size: 80%;
-  color: #999;
-}
-.infobar {
-  background-color: black;
-}
-.infocard {
-  background-color: black;
-  background-image: url('/images/noise-dark-35.png');
-}
-.infocard .x-html,
-.infocard .x-html h1,
-.infocard .x-html h2,
-.infocard .x-html h3 {
-  color: rgba(255,255,255,0.8);
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.3),  
-               0  1px 0 rgba(255,255,255,0.4);
-}
-.canvas {
+.painting {
   background-color: white;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 0;
 }
 
-.asteroid { background-image: url('/images/originals/asteroid.jpg'); }
-.template { background-image: url('/images/originals/template.jpg'); }
-.standing { background-image: url('/images/originals/standing.jpg'); }
-.sitting  { background-image: url('/images/originals/sitting.jpg'); }
-.erect    { background-image: url('/images/originals/erect.jpg'); }
+.asteroid { background-image: url('/images/paintings/asteroid.jpg'); }
+.template { background-image: url('/images/paintings/template.jpg'); }
+.standing { background-image: url('/images/paintings/standing.jpg'); }
+.sitting  { background-image: url('/images/paintings/sitting.jpg'); }
+.erect    { background-image: url('/images/paintings/erect.jpg'); }
+
+.paintingcard {
+  background-color: black;
+}
+.infocard {
+  background-color: black;
+  background-image: url('/images/noise.png');
+}
+.infocard .x-html,
+.infocard .x-html a,
+.infocard .x-html h1,
+.infocard .x-html h2,
+.infocard .x-html h3 {
+  color: rgba(255,255,255,0.8);
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3),
+               0  1px 0 rgba(255,255,255,0.4);
+}

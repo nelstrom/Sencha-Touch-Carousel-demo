@@ -1,53 +1,51 @@
 App.views.Viewport = Ext.extend(Ext.Carousel, {
     fullscreen: true,
-    
+
     initComponent: function() {
         Ext.apply(this, {
-            cls: 'painting',
+
+            defaults: {
+                xtype: 'paintingcard',
+                artist: 'Dale Adcock',
+                url: 'http://daleadcock.com/index.php?/p/p/',
+                medium: 'oil on linen'
+            },
+
             items: [
+
                 {
-                    xtype: 'infobar',
                     slug: 'asteroid',
-                    title: 'Untitled asteroid',
-                    artist: 'Dale Adcock',
-                    medium: 'Oil on canvas',
-                    dimensions: '1,000 x 1,000mm'
+                    title: 'Asteroid',
+                    dimensions: '152.4 x 152.4cm',
+                    date: '2010-2011'
                 },
 
                 {
-                    xtype: 'infobar',
                     slug: 'template',
                     title: 'Template',
-                    artist: 'Dale Adcock',
-                    medium: 'Oil on canvas',
-                    dimensions: '1,000 x 1,000mm'
+                    dimensions: '245 x 195cm',
+                    date: '2010-2011'
                 },
 
                 {
-                    xtype: 'infobar',
                     slug: 'standing',
                     title: 'Standing',
-                    artist: 'Dale Adcock',
-                    medium: 'Oil on canvas',
-                    dimensions: '1,000 x 1,000mm'
+                    dimensions: '190 x 230cm',
+                    date: '2009'
                 },
 
                 {
-                    xtype: 'infobar',
                     slug: 'sitting',
                     title: 'Sitting',
-                    artist: 'Dale Adcock',
-                    medium: 'Oil on canvas',
-                    dimensions: '1,000 x 1,000mm'
+                    dimensions: '230 x 190cm',
+                    date: '2009'
                 },
 
                 {
-                    xtype: 'infobar',
                     slug: 'erect',
                     title: 'Erect',
-                    artist: 'Dale Adcock',
-                    medium: 'Oil on canvas',
-                    dimensions: '1,000 x 1,000mm'
+                    dimensions: '230 x 190cm',
+                    date: '2009'
                 },
 
             ],
