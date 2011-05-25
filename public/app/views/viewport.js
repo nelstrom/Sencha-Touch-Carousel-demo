@@ -3,10 +3,12 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
 
     initComponent: function() {
         Ext.apply(this, {
+
             defaults: {
                 xtype: 'paintingcard',
                 styleHtmlContent: true
             },
+
             items: [
 
                 {
