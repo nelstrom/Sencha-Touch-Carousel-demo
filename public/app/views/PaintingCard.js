@@ -38,6 +38,7 @@ App.views.PaintingCard = Ext.extend(Ext.Panel, {
 
             layout: 'card',
             cardSwitchAnimation: 'flip',
+            cls: 'paintingcard',
 
             items: [ imageCard, infoCard ],
             
