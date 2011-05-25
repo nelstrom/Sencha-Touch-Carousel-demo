@@ -3,34 +3,34 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
 
     initComponent: function() {
         Ext.apply(this, {
+
+            defaults: {
+                xtype: 'paintingcard',
+            },
+
             items: [
 
                 {
-                    xtype: 'paintingcard',
                     slug: 'asteroid',
                     title: 'Asteroid'
                 },
 
                 {
-                    xtype: 'paintingcard',
                     slug: 'template',
                     title: 'Template'
                 },
 
                 {
-                    xtype: 'paintingcard',
                     slug: 'standing',
                     title: 'Standing'
                 },
 
                 {
-                    xtype: 'paintingcard',
                     slug: 'sitting',
                     title: 'Sitting'
                 },
 
                 {
-                    xtype: 'paintingcard',
                     slug: 'erect',
                     title: 'Erect'
                 },
