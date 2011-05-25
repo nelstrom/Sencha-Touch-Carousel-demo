@@ -3,11 +3,13 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
 
     initComponent: function() {
         Ext.apply(this, {
-            defaults: {styleHtmlContent: true},
+            defaults: {
+                xtype: 'paintingcard',
+                styleHtmlContent: true
+            },
             items: [
 
                 {
-                    xtype: 'paintingcard',
                     slug: 'asteroid',
                     title: 'Asteroid',
                     artist: 'Dale Adcock',
@@ -17,7 +19,6 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 },
 
                 {
-                    xtype: 'paintingcard',
                     slug: 'template',
                     title: 'Template',
                     artist: 'Dale Adcock',
@@ -27,7 +28,6 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 },
 
                 {
-                    xtype: 'paintingcard',
                     slug: 'standing',
                     title: 'Standing',
                     artist: 'Dale Adcock',
@@ -37,7 +37,6 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 },
 
                 {
-                    xtype: 'paintingcard',
                     slug: 'sitting',
                     title: 'Sitting',
                     artist: 'Dale Adcock',
@@ -47,7 +46,6 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 },
 
                 {
-                    xtype: 'paintingcard',
                     slug: 'erect',
                     title: 'Erect',
                     artist: 'Dale Adcock',
