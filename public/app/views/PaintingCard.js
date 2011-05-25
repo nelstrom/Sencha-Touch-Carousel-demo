@@ -3,7 +3,7 @@ App.views.PaintingCard = Ext.extend(Ext.Panel, {
         var pane = this,
 
         imageCard = {
-            flex: 3,
+            flex: 2,
             cls: 'painting ' + pane.slug,
         },
 
@@ -20,6 +20,7 @@ App.views.PaintingCard = Ext.extend(Ext.Panel, {
                         "<dl>",
                         "  <dt>medium:</dt><dd>{medium}</dd>",
                         "  <dt>dimensions:</dt><dd>{dimensions}</dd>",
+                        "  <dt>date:</dt><dd>{date}</dd>",
                         "</dl>"
                     ],
                     show: function() { this.update(pane); }
