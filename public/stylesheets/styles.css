@@ -1,4 +1,14 @@
-.metadata {
-  font-size: 80%;
-  color: #999;
+html, .x-fullscreen {
+  background-color: #fff;
 }
+.painting .x-carousel-item {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 0;
+}
+
+.painting .asteroid { background-image: url('/images/paintings/asteroid.jpg'); }
+.painting .template { background-image: url('/images/paintings/template.jpg'); }
+.painting .standing { background-image: url('/images/paintings/standing.jpg'); }
+.painting .sitting  { background-image: url('/images/paintings/sitting.jpg'); }
+.painting .erect    { background-image: url('/images/paintings/erect.jpg'); }
