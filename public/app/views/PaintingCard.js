@@ -17,6 +17,7 @@ App.views.PaintingCard = Ext.extend(Ext.Panel, {
                 "<dl>",
                 "  <dt>medium:</dt><dd>{medium}</dd>",
                 "  <dt>dimensions:</dt><dd>{dimensions}</dd>",
+                "  <dt>date:</dt><dd>{date}</dd>",
                 "</dl>"
             ]
         },
