@@ -3,14 +3,13 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
     
     initComponent: function() {
         Ext.apply(this, {
-            cls: 'painting',
             direction: 'vertical',
             items: [
-                { cls: 'asteroid' },
-                { cls: 'template' },
-                { cls: 'standing' },
-                { cls: 'sitting' },
-                { cls: 'erect' },
+                { cls: 'painting asteroid' },
+                { cls: 'painting template' },
+                { cls: 'painting standing' },
+                { cls: 'painting sitting' },
+                { cls: 'painting erect' },
             ],
         });
         App.views.Viewport.superclass.initComponent.apply(this, arguments);
