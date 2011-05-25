@@ -9,6 +9,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 styleHtmlContent: true,
                 artist: 'Dale Adcock',
                 url: 'http://daleadcock.com/index.php?/p/p/',
+                medium: 'oil on linen'
             },
 
             items: [
@@ -16,7 +17,6 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 {
                     slug: 'asteroid',
                     title: 'Asteroid',
-                    medium: 'oil on linen',
                     dimensions: '152.4 x 152.4cm',
                     date: '2010-2011'
                 },
@@ -24,7 +24,6 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 {
                     slug: 'template',
                     title: 'Template',
-                    medium: 'oil on linen',
                     dimensions: '245 x 195cm',
                     date: '2010-2011'
                 },
@@ -32,7 +31,6 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 {
                     slug: 'standing',
                     title: 'Standing',
-                    medium: 'oil on linen',
                     dimensions: '190 x 230cm',
                     date: '2009'
                 },
@@ -40,7 +38,6 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 {
                     slug: 'sitting',
                     title: 'Sitting',
-                    medium: 'oil on linen',
                     dimensions: '230 x 190cm',
                     date: '2009'
                 },
@@ -48,7 +45,6 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
                 {
                     slug: 'erect',
                     title: 'Erect',
-                    medium: 'oil on linen',
                     dimensions: '230 x 190cm',
                     date: '2009'
                 },
