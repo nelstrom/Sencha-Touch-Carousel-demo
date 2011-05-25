@@ -4,6 +4,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
     initComponent: function() {
         Ext.apply(this, {
             cls: 'painting',
+            direction: 'vertical',
             items: [
                 { cls: 'asteroid' },
                 { cls: 'template' },
