@@ -6,7 +6,7 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
 
             defaults: {
                 xtype: 'paintingcard'
-            }
+            },
 
             items: [
 
