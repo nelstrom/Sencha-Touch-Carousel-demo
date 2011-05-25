@@ -3,7 +3,6 @@ App.views.Viewport = Ext.extend(Ext.Carousel, {
 
     initComponent: function() {
         Ext.apply(this, {
-            defaults: {styleHtmlContent: true},
             items: [
 
                 {
