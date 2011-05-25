@@ -1,5 +1,32 @@
 App.views.PaintingCard = Ext.extend(Ext.Panel, {
     initComponent: function(){
+        var pane = this,
+
+        imageCard = {
+            flex: 3,
+            cls: 'painting ' + pane.slug,
+        },
+
+        infoCard = {
+            xtype: 'carousel',
+            flex: 1,
+            items: [
+                {
+                    tpl: ["<h3>{title}</h3>", "<p>by {artist}</p>"],
+                    show: function() { this.update(pane); }
+                },
+                {
+                    tpl: [
+                        "<dl>",
+                        "  <dt>medium:</dt><dd>{medium}</dd>",
+                        "  <dt>dimensions:</dt><dd>{dimensions}</dd>",
+                        "</dl>"
+                    ],
+                    show: function() { this.update(pane); }
+                }
+            ]
+        };
+
         Ext.apply(this, {
 
             layout: {
@@ -7,17 +34,7 @@ App.views.PaintingCard = Ext.extend(Ext.Panel, {
                 align: 'stretch'
             },
 
-            items: [
-                {
-                    flex: 3,
-                    cls: 'painting ' + this.slug,
-                },
-                {
-                    flex: 1,
-                    styleHtmlContent: true,
-                    html: "<h3>" + this.title + "</h3><p>by Dale Adcock</p>"
-                }
-            ]
+            items: [ imageCard, infoCard ]
         });
 
         App.views.PaintingCard.superclass.initComponent.call(this);
