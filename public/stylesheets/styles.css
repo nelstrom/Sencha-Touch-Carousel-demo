@@ -22,6 +22,7 @@ html, .x-fullscreen {
   background-image: url('/images/noise.png');
 }
 .infocard .x-html,
+.infocard .x-html a,
 .infocard .x-html h1,
 .infocard .x-html h2,
 .infocard .x-html h3 {

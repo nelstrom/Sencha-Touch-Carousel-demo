@@ -12,8 +12,8 @@ App.views.PaintingCard = Ext.extend(Ext.Panel, {
             cls: 'infocard',
             styleHtmlContent: true,
             tpl: [
-                "<h2>{title}</h2>",
-                "<p>by {artist}</p>",
+                "<h3>{title}</h3>",
+                "<p>by <a href='{url}'>{artist}</a></p>",
                 "<dl>",
                 "  <dt>medium:</dt><dd>{medium}</dd>",
                 "  <dt>dimensions:</dt><dd>{dimensions}</dd>",
