@@ -25,12 +25,12 @@ App.views.PaintingCard = Ext.extend(Ext.Panel, {
         toggleButton = {
             text: 'info',
             handler: function() {
-                if (this.getText() == 'image') {
-                    pane.setActiveItem('image_' + pane.slug);
-                    this.setText('info');
-                } else {
+                if (this.getText() == 'info') {
                     pane.setActiveItem('info_' + pane.slug);
                     this.setText('image');
+                } else {
+                    pane.setActiveItem('image_' + pane.slug);
+                    this.setText('info');
                 }
             }
         };
