@@ -4,15 +4,15 @@ html, .x-fullscreen {
 .painting {
   background-color: white;
   background-repeat: no-repeat;
-  background-size: contain;
+/*  background-size: contain;*/
   background-position: 50% 0;
 }
 
-.asteroid { background-image: url('/images/paintings/asteroid.jpg'); }
-.template { background-image: url('/images/paintings/template.jpg'); }
-.standing { background-image: url('/images/paintings/standing.jpg'); }
-.sitting  { background-image: url('/images/paintings/sitting.jpg'); }
-.erect    { background-image: url('/images/paintings/erect.jpg'); }
+.asteroid { background-image: url('http://src.sencha.io/http://sencha-carousel.heroku.com/images/paintings/asteroid.jpg'); }
+.template { background-image: url('http://src.sencha.io/http://sencha-carousel.heroku.com/images/paintings/template.jpg'); }
+.standing { background-image: url('http://src.sencha.io/http://sencha-carousel.heroku.com/images/paintings/standing.jpg'); }
+.sitting  { background-image: url('http://src.sencha.io/http://sencha-carousel.heroku.com/images/paintings/sitting.jpg'); }
+.erect    { background-image: url('http://src.sencha.io/http://sencha-carousel.heroku.com/images/paintings/erect.jpg'); }
 
 .paintingcard {
   background-color: black;
