@@ -2,6 +2,13 @@ This Git repository includes all of the source code used in creating a tutorial 
 
 The tutorial includes several checkpoints:
 
+* [Blank slate][0]
+* [A basic carousel][1]
+* [Carousel plus vbox layout][2] (with much duplication)
+* [Carousel plus vbox layout][3] (DRY, with a custom componenent)
+* [Carousel with a nested carousel][4]
+* [Carousel with a flipcard][5]
+
 # Using this repository to follow the screencast
 
 First, you'll have to clone this repository:
@@ -29,3 +36,9 @@ You can try out the demo here:
 * [http://sencha-carousel.heroku.com/][t]
 
 [t]: http://sencha-carousel.heroku.com/
+[0]: https://github.com/nelstrom/Sencha-Touch-Carousel-demo/tree/00_blank_slate
+[1]: https://github.com/nelstrom/Sencha-Touch-Carousel-demo/tree/01_basic_carousel
+[2]: https://github.com/nelstrom/Sencha-Touch-Carousel-demo/tree/02_carousel_plus_vbox_verbose
+[3]: https://github.com/nelstrom/Sencha-Touch-Carousel-demo/tree/03_carousel_plus_vbox_dry
+[4]: https://github.com/nelstrom/Sencha-Touch-Carousel-demo/tree/04_carousel_plus_carousel
+[5]: https://github.com/nelstrom/Sencha-Touch-Carousel-demo/tree/05_carousel_plus_toolbar
